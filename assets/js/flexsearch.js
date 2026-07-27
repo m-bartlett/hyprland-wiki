@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
           activeResult.click();
         }
         finishSearch();
+        break;
       case 'Escape':
         e.preventDefault();
         hideSearchResults();
@@ -254,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let title = data[searchUrl].title;
         if (title == "_index") {
-          title = urlPart.split("-").map(x => x).join(" ");
+          title = urlPart.split("-").join(" ");
         }
         crumb += title;
 
