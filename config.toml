@@ -111,7 +111,13 @@ enable = true
 type   = "flexsearch"
 
 [params.search.flexsearch]
-index = "content"
+index          = "content"
+# Maximum number of matching pages to show in search results.
+# Defaults to 100 so that all matching pages are surfaced.
+maxPageResults = 100
+# Maximum number of matching subsections to show per page.
+# Defaults to 100 so that all matching subsections are surfaced.
+maxSectionResults = 100
 
 [params.editURL]
 enable = true
